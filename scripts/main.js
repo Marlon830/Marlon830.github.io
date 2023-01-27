@@ -1,4 +1,4 @@
-onMounted(async () => {
+(async () => {
     const handleOnMouseMove = e => {
         const { currentTarget: target } = e;
 
