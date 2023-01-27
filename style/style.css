@@ -3,6 +3,7 @@
     gap: 8px;
     max-width: 916;
     width: calc(100% - 20px);
+    justify-items: center;
 }
 
 .card {
