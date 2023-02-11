@@ -16,12 +16,14 @@ function resizeWindow()
 {
   var w = window.innerWidth;
   var h = window.innerHeight;
-  var fac = (h / 900);
+  var cards = document.getElementById("cards");
+  var currentCardsHeight = cards.offsetHeight;
+  var fac = (h / currentCardsHeight);
 
-  if (w <= 1080 && h <= 900) {
-    document.getElementById("cards").style.transform = `scale(${fac})`;
+  if (w <= 1080 && h <= 1000) {
+    cards.style.transform = `scale(${fac})`;
   } else {
-    document.getElementById("cards").style.transform = 'scale(1)';
+    cards.style.transform = 'scale(1)';
   }
   setTimeout(resizeWindow, 200);
 }
